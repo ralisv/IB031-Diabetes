@@ -14,3 +14,6 @@
         - Ako bude vyzerať celá učiaci pipeline?
         - Aké modely budete učiť?
         - Ako modely vyhodnotíte?
+
+# Presentation link
+https://ucnmuni-my.sharepoint.com/:p:/g/personal/536510_muni_czEQCxLmYNf3ZJiHS-qLT_MJUBDGaG9lW4_JMd2Hhs94hzvA?e=W6agZo
