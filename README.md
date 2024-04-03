@@ -1,4 +1,4 @@
-TODO:
+# TODO:
 1. Predstavenie datasetu
 - O čom je dataset?
 - Čo sú v ňom za dáta?
