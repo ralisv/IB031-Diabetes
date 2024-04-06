@@ -1,6 +1,10 @@
 # Findings
     1. Dataset issues
         - Categorical data
+            -> weirdly encoded - Health 
+            -> where none is enough, no/refused ... instead
+        - Duplicate rows
+        - Need to handle None values (so far we ignore)
     2. Models considered
         - Random forest
         - Bayes network
