@@ -234,9 +234,6 @@ class CouldNotSeeDoctorBecauseOfCost(Enum):
     """ The question was not asked or the value is missing. """
 
 
-from enum import Enum
-
-
 class GeneralHealth(Enum):
     """
     Enum representing a person's general health status.
@@ -267,9 +264,6 @@ class GeneralHealth(Enum):
     """ The question was not asked or the value is missing. """
 
 
-from enum import Enum
-
-
 class DaysMentalHealthNotGood(Enum):
     """
     Enum representing the number of days during the past 30 days when a person's mental health was not good.
@@ -294,9 +288,6 @@ class DaysMentalHealthNotGood(Enum):
         if 1 <= self.value <= 30:
             return self.value
         return None
-
-
-from enum import Enum
 
 
 class DifficultyWalkingOrClimbingStairs(Enum):
