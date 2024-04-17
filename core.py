@@ -10,7 +10,7 @@ def load_dataset(part_dir) -> pd.DataFrame:
     dataset_parts_df = [
         pd.read_csv(Path(part_dir) / f"part{part_num}.csv") for part_num in range(1, 6)
     ]
-    return pd.concat(dataset_parts_df)
+    return pd.concat(dataset_parts_df)[:10000]
 
 
 def get_column_mapping() -> dict[str, str]:
