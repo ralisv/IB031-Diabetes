@@ -82,6 +82,7 @@ def process_columns(dataset: pd.DataFrame) -> None:
             "DONT_KNOW_OR_REFUSED_OR_MISSING",
             "BLANK",
             "DONT_KNOW_REFUSED_OR_MISSING",
+            "NONE"
         }
 
         if pd.isna(val) or enum_class(val).name in convert_to_nan:  # type: ignore
