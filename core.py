@@ -94,3 +94,14 @@ def process_columns(dataset: pd.DataFrame) -> None:
 
     object_cols = dataset.select_dtypes(include=["object"]).columns
     dataset[object_cols] = dataset[object_cols].astype("category")
+
+
+def remove_unusable_diabetes_categories(dataset: pd.DataFrame) -> None:
+    """Remove the "less" important categories to make the Diabetes column binary"""
+    # Create a copy of the dataset to avoid modifying the original DataFrame
+    dataset = dataset[
+        (dataset["diabetes"] != "Diabetes.PRE_DIABETES_OR_BORDERLINE")
+        & (dataset["diabetes"] != "Diabetes.YES_ONLY_DURING_PREGNANCY")
+    ]
+    # Explicitly return a new DataFrame with unused categories removed
+    dataset["diabetes"].cat.remove_unused_categories()
